@@ -14,7 +14,7 @@ class _HomePageState extends State<HomePage> {
 body: SingleChildScrollView(
   child:   Column(
     children: [
-  SizedBox(height: 55,),
+  SizedBox(height: 55),
   Row(children: [
    Icon(Icons.arrow_back), 
 SizedBox(width: 30,),
@@ -380,7 +380,6 @@ size: 40,
 
 ),
 SizedBox(height: 20,),
-
 Text('Assigned tools',
 style: TextStyle(color: Colors.white,
 ),
