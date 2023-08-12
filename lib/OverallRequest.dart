@@ -16,8 +16,11 @@ class OverallRequest extends StatelessWidget {
       
           Row(
             children: [
-           Icon(Icons.arrow_back), 
-        SizedBox(width: 30,),
+           SizedBox(width: 10,),
+           Icon(Icons.arrow_back,
+           color: Colors.purple.shade300,
+                     ), 
+        SizedBox(width: 10,),
         Text('Overall Service Request',
         style: TextStyle(
           fontWeight: FontWeight.bold,
@@ -28,7 +31,7 @@ class OverallRequest extends StatelessWidget {
           ],),
 
 
-SizedBox(height: 20,),
+SizedBox(height: 50,),
 
 Row(
   children: [
@@ -138,7 +141,7 @@ end: Alignment.bottomCenter,
 
 
       
-             SizedBox(height: 30,),
+             SizedBox(height: 20,),
       
            Container(
         height: 90,
@@ -169,7 +172,7 @@ end: Alignment.bottomCenter,
          ),
          ),
          child: Icon(
-           Icons.support,
+           Icons.local_movies_sharp,
          color: Colors.white,
          ),
          
@@ -217,7 +220,7 @@ end: Alignment.bottomCenter,
          ),
          ),
          child: Icon(
-           Icons.support,
+           Icons.local_movies_sharp,
          color: Colors.white,
          ),
          
@@ -265,7 +268,7 @@ end: Alignment.bottomCenter,
          ),
          ),
          child: Icon(
-           Icons.support,
+           Icons.local_movies_sharp,
          color: Colors.white,
          ),
          
@@ -312,7 +315,7 @@ end: Alignment.bottomCenter,
          ),
          ),
          child: Icon(
-           Icons.support,
+           Icons.local_movies_sharp,
          color: Colors.white,
          ),
          
@@ -355,7 +358,7 @@ end: Alignment.bottomCenter,
          ),
          ),
          child: Icon(
-           Icons.support,
+           Icons.local_movies_sharp,
          color: Colors.white,
          ),
          
@@ -401,7 +404,7 @@ end: Alignment.bottomCenter,
          ),
          ),
          child: Icon(
-           Icons.support,
+           Icons.local_movies_sharp,
          color: Colors.white,
          ),
          
@@ -443,7 +446,7 @@ SizedBox(width: 25,),
          ),
          ),
          child: Icon(
-           Icons.support,
+           Icons.local_movies_sharp,
          color: Colors.white,
          ),
          
@@ -488,7 +491,7 @@ SizedBox(width: 25,),
          ),
          ),
          child: Icon(
-           Icons.support,
+           Icons.local_movies_sharp,
          color: Colors.white,
          ),
          
@@ -533,7 +536,7 @@ SizedBox(width: 25,),
          ),
          ),
          child: Icon(
-           Icons.support,
+           Icons.local_movies_sharp,
          color: Colors.white,
          ),
          
