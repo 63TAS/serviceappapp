@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_figma_project/2ndPage.dart';
 import 'package:flutter_figma_project/IstPage.dart';
-import 'package:flutter_figma_project/OverallRewuest.dart';
+import 'package:flutter_figma_project/OverallRequest.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 
-void main() {
+void main() async{
   runApp(const MyApp());
+  // WidgetsFlutterBinding.ensureInitialized();
+  
 }
 
 class MyApp extends StatelessWidget {
@@ -14,17 +17,31 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return  ScreenUtilInit(
+
+designSize: Size(377, 557),
+minTextAdapt: true,
+splitScreenMode: true,
+builder: (context, child) {
+  return 
+  
+  
+    
+    MaterialApp(
      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
+     
       home: OverallRequest(),
     );
-  }
+});
 }
+  
+  }
+
 
 
 class MyHomePage extends StatefulWidget {
@@ -75,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
+        // title: Text(widget.title),
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
