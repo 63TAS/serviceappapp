@@ -24,21 +24,21 @@ class TaskList extends StatelessWidget {
        child: Container(
           height: 147,
              width: 328, 
+         decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
+        color: Colors.white,
+         ),
           child:
-           Card(
-            color: Colors.white,
-             shape: ContinuousRectangleBorder(borderRadius: BorderRadius.circular(20),
-             ),
-            child: Column(children: [
-              Row(
-                children: [
+           Column(children: [
+             Row(
+               children: [
+    // Container(height:110,
+    //  width: 5,
+    //  color: Colors.purple, 
+    //  ),
+    
      SizedBox(height: 40,),
-     Padding(
-       padding: const EdgeInsets.only(left: 15),
-
-       child: Icon(Icons.check_box_outlined,
-       color: Colors.purple,
-       ),
+     Icon(Icons.check_box_outlined,
+     color: Colors.purple,
      ),
          SizedBox(width: 10,),
 
@@ -52,14 +52,14 @@ class TaskList extends StatelessWidget {
      Icon(Icons.more_vert,
        color: Colors.black,
        ),
-            
-            
-              ],),
-                      SizedBox(height: 10,),
+           
+           
+             ],),
+                     SizedBox(height: 10,),
 
-             
-              Row(
-                children: [
+            
+             Row(
+               children: [
 SizedBox(width: 45,),
 RichText(text: TextSpan(children: [
 
@@ -75,33 +75,33 @@ fontSize: 12.sp,
 
 ])),
            SizedBox(width:5,),
-                              RichText(
-                                text: TextSpan(children: [
-               
-               
-               
-                 TextSpan(text: '#3135161',
-               
-                 style: TextStyle(color: Color(0xFF1E1E1E),
-               
-               fontSize: 12.sp,
-               
-               
-               
-               
-               
-                 ),
-               
-                   ),
-               
-                 
-               
-               
-               
-               
-               
-               ])),
-               SizedBox(width: 55,),
+                             RichText(
+                               text: TextSpan(children: [
+              
+              
+              
+                TextSpan(text: '#3135161',
+              
+                style: TextStyle(color: Color(0xFF1E1E1E),
+              
+              fontSize: 12.sp,
+              
+              
+              
+              
+              
+                ),
+              
+                  ),
+              
+                
+              
+              
+              
+              
+              
+              ])),
+              SizedBox(width: 55,),
 RichText(text: TextSpan(children: [
 
   TextSpan(text: 'Date:04-08-2023',
@@ -117,10 +117,10 @@ fontSize: 12.sp,
 ])),
 
            
-              ]),
+             ]),
           SizedBox(height: 10,),
            Row(
-                children: [
+               children: [
 SizedBox(width: 43,),
 RichText(text: TextSpan(children: [
 
@@ -136,38 +136,38 @@ fontSize: 12.sp,
 
 ])),
            SizedBox(width:5,),
-                              RichText(
-                                text: TextSpan(children: [
-               
-               
-               
-                 TextSpan(text: 'Completed',
-               
-                 style: TextStyle(color: Color(0xFF1E1E1E),
-               
-               fontSize: 12.sp,
-               
-               
-               
-               
-               
-                 ),
-               
-                   ),
-               
-                 
-               
-               
-               
-               
-               
-               ])),
+                             RichText(
+                               text: TextSpan(children: [
+              
+              
+              
+                TextSpan(text: 'Completed',
+              
+                style: TextStyle(color: Color(0xFF1E1E1E),
+              
+              fontSize: 12.sp,
+              
+              
+              
+              
+              
+                ),
+              
+                  ),
+              
+                
+              
+              
+              
+              
+              
+              ])),
   
-            ]),
+           ]),
       
        SizedBox(height: 10,),
            Row(
-                children: [
+               children: [
 SizedBox(width: 43,),
 RichText(text: TextSpan(children: [
 
@@ -183,38 +183,37 @@ fontSize: 12.sp,
 
 ])),
            SizedBox(width:5,),
-                              RichText(
-                                text: TextSpan(children: [
-               
-               
-               
-                 TextSpan(text: 'Manager(Sell)',
-               
-                 style: TextStyle(color: Color(0xFF1E1E1E),
-               
-               fontSize: 12.sp,
-               
-               
-               
-               
-               
-                 ),
-               
-                   ),
-               
-                 
-               
-               
-               
-               
-               
-               ])),
+                             RichText(
+                               text: TextSpan(children: [
+              
+              
+              
+                TextSpan(text: 'Manager(Sell)',
+              
+                style: TextStyle(color: Color(0xFF1E1E1E),
+              
+              fontSize: 12.sp,
+              
+              
+              
+              
+              
+                ),
+              
+                  ),
+              
+                
+              
+              
+              
+              
+              
+              ])),
   
-            ]),
+           ]),
 
       
       ]),
-           ),
      )
     )]),
     

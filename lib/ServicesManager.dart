@@ -1,21 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
 
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
+class ServiceMangaer extends StatelessWidget {
+  const ServiceMangaer({super.key});
 
-class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
 body: SingleChildScrollView(
   child:   Column(
     children: [
-   SizedBox(height: 49),
-
+  SizedBox(height: 55),
   Row(
     children: [
      SizedBox(width: 20),
@@ -23,19 +19,18 @@ body: SingleChildScrollView(
    Icon(Icons.arrow_back,
    color: Colors.purple,
    ), 
-SizedBox(width: 10,),
+SizedBox(width: 20,),
 Text('Back',
-style: TextStyle(fontWeight: FontWeight.bold,
-fontSize: 25,
+style: TextStyle(fontWeight: FontWeight.w500,
+fontSize: 25.sp,
 ),
 )
-  ],
-  ),
+  ],),
   SizedBox(height: 25,),
 
   Padding(
     padding: const EdgeInsets.only(right: 160),
-    child: Text('service Engineer',
+    child: Text('service Manaager',
     style: TextStyle(color: Colors.purple,
     fontWeight: FontWeight.bold,
    fontSize: 25,
@@ -43,7 +38,7 @@ fontSize: 25,
     ),
     ),
   ),
- SizedBox(height: 50,),
+ SizedBox(height: 20,),
 //Ist 
   Row(
     children: [
@@ -58,8 +53,8 @@ Container(
 // Colors.purple,
 //     Colors.purple,
 //     Colors.orange.shade300,
- 
-                  Color(0xFF9101B4), Color(0xFFD1465B)
+  
+                   Color(0xFF9101B4), Color(0xFFD1465B)
 
   ],
   begin: Alignment.topCenter,
@@ -88,12 +83,11 @@ Container(
   decoration: BoxDecoration(
  borderRadius: BorderRadius.circular(5),
     gradient: LinearGradient(colors: [
-//     Colors.purple,
+    // Colors.purple,
 // Colors.purple,
-//     Colors.purple,
 //     Colors.orange.shade300,
-
-                 Color(0xFF9101B4), Color(0xFFD1465B)
+                  Color(0xFF9101B4),
+                   Color(0xFFD1465B)
 
   ],
   begin: Alignment.topCenter,
@@ -110,9 +104,12 @@ size: 40,
 ),
 SizedBox(height: 20,),
 
-Text('Assigned tools',
-style: TextStyle(color: Colors.white),
-)
+Text('Services Engineer \n       Utilization',
+style: TextStyle(
+  color: Color(0xFFFFFFFF)),
+  
+  
+),
 
 ]),),
 
@@ -131,12 +128,7 @@ Container(
   decoration: BoxDecoration(
  borderRadius: BorderRadius.circular(5),
     gradient: LinearGradient(colors: [
-//     Colors.purple,
-// Colors.purple,
-//     Colors.purple,
-//     Colors.orange.shade300,
-
-                 Color(0xFF9101B4), Color(0xFFD1465B)
+                    Color(0xFF9101B4), Color(0xFFD1465B)
 
   ],
   begin: Alignment.topCenter,
@@ -146,14 +138,14 @@ Container(
   children: [
 SizedBox(height: 20,),
 
-Icon(Icons.query_builder,
+Icon(Icons.groups,
 color: Colors.white,
 size: 40,
 
 ),
 SizedBox(height: 20,),
 
-Text('Service Queue',
+Text('Service Team\n performance',
 style: TextStyle(color: Colors.white),
 )
 
@@ -169,8 +161,8 @@ Container(
 // Colors.purple,
 //     Colors.purple,
 //     Colors.orange.shade300,
-
-                 Color(0xFF9101B4), Color(0xFFD1465B)
+  
+                   Color(0xFF9101B4), Color(0xFFD1465B)
 
   ],
   begin: Alignment.topCenter,
@@ -187,7 +179,7 @@ size: 40,
 ),
 SizedBox(height: 20,),
 
-Text('SLA Compliace',
+Text('SLA Compliace\n      Report',
 style: TextStyle(color: Colors.white),
 ),
 
@@ -212,8 +204,41 @@ Container(
 // Colors.purple,
 //     Colors.purple,
 //     Colors.orange.shade300,
-                 Color(0xFF9101B4), Color(0xFFD1465B)
 
+                 Color(0xFF9101B4), 
+                 Color(0xFFD1465B)
+  ],
+  begin: Alignment.topCenter,
+  end: Alignment.bottomCenter,
+  )),
+  child: Column(
+  children: [
+SizedBox(height: 20,),
+
+Icon(Icons.group_remove_rounded,
+color: Colors.white,
+size: 40,
+
+),
+SizedBox(height: 20,),
+
+Text('Customer satis\n   faction index',
+style: TextStyle(color: Colors.white),
+)
+
+]),),
+SizedBox(width: 30,),
+Container(
+ height: 150,
+ width: 170,
+  decoration: BoxDecoration(
+ borderRadius: BorderRadius.circular(5),
+    gradient: LinearGradient(colors: [
+//     Colors.purple,
+// Colors.purple,
+//     Colors.purple,
+//     Colors.orange.shade300,
+                   Color(0xFF9101B4), Color(0xFFD1465B)
 
   ],
   begin: Alignment.topCenter,
@@ -230,41 +255,7 @@ size: 40,
 ),
 SizedBox(height: 20,),
 
-Text('Pending Spare\n        Parts',
-style: TextStyle(color: Colors.white),
-)
-
-]),),
-SizedBox(width: 30,),
-Container(
- height: 150,
- width: 170,
-  decoration: BoxDecoration(
- borderRadius: BorderRadius.circular(5),
-    gradient: LinearGradient(colors: [
-//     Colors.purple,
-// Colors.purple,
-//     Colors.purple,
-//     Colors.orange.shade300,
-
-                 Color(0xFF9101B4), Color(0xFFD1465B)
-
-  ],
-  begin: Alignment.topCenter,
-  end: Alignment.bottomCenter,
-  )),
-  child: Column(
-  children: [
-SizedBox(height: 20,),
-
-Icon(Icons.timer,
-color: Colors.white,
-size: 40,
-
-),
-SizedBox(height: 20,),
-
-Text('Average Response \n            Time',
+Text('Service Costs & \n      Expenses',
 style: TextStyle(color: Colors.white),
 )
 
@@ -300,14 +291,14 @@ Container(
   children: [
 SizedBox(height: 20,),
 
-Icon(Icons.lock,
+Icon(Icons.timer,
 color: Colors.white,
 size: 40,
 
 ),
 SizedBox(height: 20,),
 
-Text('First Time Fix \n         Rate',
+Text('Asset Request',
 style: TextStyle(color: Colors.white),
 )
 
@@ -319,9 +310,14 @@ Container(
   decoration: BoxDecoration(
  borderRadius: BorderRadius.circular(5),
     gradient: LinearGradient(colors: [
-                 Color(0xFF9101B4), Color(0xFFD1465B)
- 
- ],
+//     Colors.purple,
+// Colors.purple,
+//     Colors.purple,
+//     Colors.orange.shade300,
+  
+                   Color(0xFF9101B4), Color(0xFFD1465B)
+
+  ],
   begin: Alignment.topCenter,
   end: Alignment.bottomCenter,
   )),
@@ -336,7 +332,7 @@ size: 40,
 ),
 SizedBox(height: 20,),
 
-Text('Service Booking',
+Text('Service  Backing\n       Trends',
 style: TextStyle(color: Colors.white),
 )
 
@@ -346,75 +342,79 @@ style: TextStyle(color: Colors.white),
 
 
   ],),
-  SizedBox(height: 20,),
-//Ist 
-  Row(
-    children: [
-SizedBox(width: 10,),
-Container(
- height: 150,
- width: 170,
-  decoration: BoxDecoration(
- borderRadius: BorderRadius.circular(5),
-    gradient: LinearGradient(colors: [
-                 Color(0xFF9101B4), Color(0xFFD1465B)
- 
+//   SizedBox(height: 20,),
+// //Ist 
+//   Row(
+//     children: [
+// SizedBox(width: 20,),
+// Container(
+//  height: 150,
+//  width: 170,
+//   decoration: BoxDecoration(
+//  borderRadius: BorderRadius.circular(5),
+//     gradient: LinearGradient(colors: [
+// //     Colors.purple,
+// // Colors.purple,
+// //     Colors.purple,
+// //     Colors.orange.shade300,
+  
+//                    Color(0xFF9101B4), Color(0xFFD1465B)
 
- ],
-  begin: Alignment.topCenter,
-  end: Alignment.bottomCenter,
-  )),
-  child: Column(
-  children: [
-SizedBox(height: 20,),
+//   ],
+//   begin: Alignment.topCenter,
+//   end: Alignment.bottomCenter,
+//   )),
+//   child: Column(
+//   children: [
+// SizedBox(height: 20,),
 
-Icon(Icons.engineering,
-color: Colors.white,
-size: 40,
+// Icon(Icons.engineering,
+// color: Colors.white,
+// size: 40,
 
-),
-SizedBox(height: 20,),
+// ),
+// SizedBox(height: 20,),
 
-Text('Open Services\n     Request',
-style: TextStyle(color: Colors.white),
-)
+// Text('Open Services\n     Request',
+// style: TextStyle(color: Colors.white),
+// )
 
-]),),
-SizedBox(width: 30,),
-Container(
- height: 150,
- width: 170,
-  decoration: BoxDecoration(
- borderRadius: BorderRadius.circular(5),
-    gradient: LinearGradient(colors: [
-//     Colors.purple,
-// Colors.purple,
-//     Colors.purple,
-//     Colors.orange.shade300,
- 
-                  Color(0xFF9101B4), Color(0xFFD1465B)
+// ]),),
+// SizedBox(width: 30,),
+// Container(
+//  height: 150,
+//  width: 170,
+//   decoration: BoxDecoration(
+//  borderRadius: BorderRadius.circular(5),
+//     gradient: LinearGradient(colors: [
+// //     Colors.purple,
+// // Colors.purple,
+// //     Colors.purple,
+// //     Colors.orange.shade300,
+  
+//                    Color(0xFF9101B4), Color(0xFFD1465B)
 
-  ],
-  begin: Alignment.topCenter,
-  end: Alignment.bottomCenter,
-  )),
-  child: Column(
-  children: [
-SizedBox(height: 20,),
+//   ],
+//   begin: Alignment.topCenter,
+//   end: Alignment.bottomCenter,
+//   )),
+//   child: Column(
+//   children: [
+// SizedBox(height: 20,),
 
-Icon(Icons.person_pin_rounded,
-color: Colors.white,
-size: 40,
+// Icon(Icons.person_pin_rounded,
+// color: Colors.white,
+// size: 40,
 
-),
-SizedBox(height: 20,),
-Text('Assigned tools',
-style: TextStyle(color: Colors.white,
-),
-)
+// ),
+// SizedBox(height: 20,),
+// Text('Assigned tools',
+// style: TextStyle(color: Colors.white,
+// ),
+// )
 
-]),),
-  ]),
+// ]),),
+//   ]),
 
 // SizedBox(width: 30,),
 // Container(
@@ -423,10 +423,13 @@ style: TextStyle(color: Colors.white,
 //   decoration: BoxDecoration(
 //  borderRadius: BorderRadius.circular(5),
 //     gradient: LinearGradient(colors: [
-//     Colors.purple,
-// Colors.purple,
-//     Colors.purple,
-//     Colors.orange.shade300,
+// //     Colors.purple,
+// // Colors.purple,
+// //     Colors.purple,
+// //     Colors.orange.shade300,
+  
+//                    Color(0xFF9101B4), Color(0xFFD1465B),
+
 //   ],
 //   begin: Alignment.topCenter,
 //   end: Alignment.bottomCenter,
