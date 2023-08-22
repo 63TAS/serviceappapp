@@ -53,12 +53,8 @@ Container(
  width: 170,
   decoration: BoxDecoration(
  borderRadius: BorderRadius.circular(5),
-    gradient: LinearGradient(colors: [
-//     Colors.purple,
-// Colors.purple,
-//     Colors.purple,
-//     Colors.orange.shade300,
- 
+    gradient: LinearGradient(
+      colors: [
                   Color(0xFF9101B4), Color(0xFFD1465B)
 
   ],

@@ -17,11 +17,12 @@ class TaskList extends StatelessWidget {
              color: Colors.purple.shade300,
                        ),
            ),
-          SizedBox(height: 30,),
+       SizedBox(height: 30,),
 
      Padding(
        padding: const EdgeInsets.only(left: 30),
-       child: Container(
+       child: 
+   Container(
           height: 147,
              width: 328, 
          decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
@@ -29,14 +30,17 @@ class TaskList extends StatelessWidget {
          ),
           child:
            Column(children: [
+                 SizedBox(height: 20,),
+
              Row(
                children: [
-    // Container(height:110,
+    // Container(
+    //   height:110,
     //  width: 5,
     //  color: Colors.purple, 
     //  ),
     
-     SizedBox(height: 40,),
+     SizedBox(width: 20,),
      Icon(Icons.check_box_outlined,
      color: Colors.purple,
      ),
@@ -146,21 +150,10 @@ fontSize: 12.sp,
                 style: TextStyle(color: Color(0xFF1E1E1E),
               
               fontSize: 12.sp,
-              
-              
-              
-              
-              
+             
                 ),
               
                   ),
-              
-                
-              
-              
-              
-              
-              
               ])),
   
            ]),
@@ -169,7 +162,8 @@ fontSize: 12.sp,
            Row(
                children: [
 SizedBox(width: 43,),
-RichText(text: TextSpan(children: [
+RichText(text: TextSpan(
+  children: [
 
   TextSpan(text: 'Current worker:',
   style: TextStyle(color: Color(0xFF7C7D7E),
@@ -194,21 +188,10 @@ fontSize: 12.sp,
               
               fontSize: 12.sp,
               
-              
-              
-              
-              
                 ),
               
                   ),
-              
-                
-              
-              
-              
-              
-              
-              ])),
+                            ])),
   
            ]),
 
