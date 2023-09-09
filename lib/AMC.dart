@@ -188,6 +188,21 @@ body: SingleChildScrollView(
             border: Border.all(color: Colors.purple),
   
             
+    gradient:LinearGradient(colors: [
+  
+             Color(0xFF9101B4), Color(0xFFD1465B),
+  
+          
+  
+          ],
+  
+          begin: Alignment.topLeft,
+  
+          end: Alignment.bottomRight
+    
+  
+  
+                       ),
   
             ),
   
@@ -1373,7 +1388,6 @@ body: SingleChildScrollView(
       color: Colors.black,
   
          ),
-  
     ),
   
   
